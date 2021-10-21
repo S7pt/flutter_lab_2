@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'chat_data.dart';
 
@@ -30,7 +28,6 @@ class TelegramHome extends StatefulWidget {
 }
 
 class _TelegramHomeState extends State<TelegramHome> {
-  int zaglushka = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,15 +48,11 @@ class _TelegramHomeState extends State<TelegramHome> {
       ),
       body: Messages(),
       floatingActionButton: FloatingActionButton(
-        onPressed: _zaglushka,
+        onPressed: () {},
         child: const Icon(Icons.create),
         backgroundColor: Color(0xff66AADB),
       ),
     );
-  }
-
-  void _zaglushka() {
-    zaglushka++;
   }
 }
 
